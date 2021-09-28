@@ -1,0 +1,11 @@
+sort1 uses: bubble sort
+
+How do you know?: because when the array is sorted it takes less time for the program to finish due to the lower bound of (n)
+
+sort2 uses: merge sort
+
+How do you know?: because it handles larger inputs faster.
+
+sort3 uses: selection sort
+
+How do you know?: because it takes similar time for the program to run both sorted and unsorted texts, since the lowe and upper bound are the same
