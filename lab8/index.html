@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <title>Trivia!</title>
+    <!-- //TODO: Add code to check answers to questions -->
+    <script>
+        const Trivia = () => {
+            //initializing variables
+            let correctAnswer = document.querySelector('#thirdButton')
+            let firstButton = document.querySelector('#firstButton')
+            let secondButton = document.querySelector('#secondButton')
+            let fourthButton = document.querySelector('#fourthButton')
+            //Defining function that checks if answer is correct or incorrect 
+            const choice = (userAnswer) => {
+                if (userAnswer == correctAnswer) {
+                    userAnswer.style.backgroundColor = 'green'
+                    document.getElementById('output1').innerHTML = "Correct!"
+
+                }
+                else {
+                    userAnswer.style.backgroundColor = 'red'
+                    document.getElementById('output1').innerHTML = "Incorrect!"
+                }
+            }
+            //calling checker function choice() when the user clicks a button
+            correctAnswer.onclick = function () { choice(correctAnswer) }
+            firstButton.onclick = function () { choice(firstButton) }
+            secondButton.onclick = function () { choice(secondButton) }
+            fourthButton.onclick = function () { choice(fourthButton) }
+            //defining function that will check if the free response is correct
+            const checker = () => {
+                let userFreeAnswer = document.querySelector('#freeResponseInput')
+                let correctFreeAnswer = "god"
+                if (userFreeAnswer.value == correctFreeAnswer) {
+                    userFreeAnswer.style.backgroundColor = 'green'
+                    document.getElementById('output2').innerHTML = "Correct!"
+                }
+                else {
+                    userFreeAnswer.style.backgroundColor = 'red'
+                    document.getElementById('output2').innerHTML = "Incorrect!"
+                }
+            }
+
+            freeResponseButton.onclick = function () { checker() }
+        }
+        //waiting for the whole content to load
+        document.addEventListener('DOMContentLoaded', Trivia)
+    </script>
+
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1>Trivia!</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="section">
+            <h2>Part 1: Multiple Choice </h2>
+            <hr>
+            <h3>How do cats meow?</h3>
+            <h3 id="output1"></h3>
+            <button type="button" id="firstButton">miau</button>
+            <button type="button" id="secondButton">oink</button>
+            <button type="button" id="thirdButton">guau</button>
+            <button type="button" id="fourthButton">piopio</button>
+        </div>
+           <!-- TODO: Add free response question here -->
+        <div class="section">
+            <h2>Part 2: Free Response</h2>
+            <hr>
+            <h3>god?</h3>
+            <h3 id="output2"></h3>
+            <input type="text" id="freeResponseInput"> <button type="button" id="freeResponseButton">Submit</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
