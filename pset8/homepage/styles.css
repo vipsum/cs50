@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "fairyfont";
+  src: url(Afterglow-Regular.ttf);
+}
+.header {
+  padding-top: 15px;
+  font-size: 25px;
+  padding-bottom: 0cm;
+}
+#invisible_underline {
+  border-bottom: 2px transparent;
+  display: inline-block;
+  line-height: 0.85;
+}
+#current {
+  border-bottom: 2px solid currentColor;
+  display: inline-block;
+  line-height: 0.85;
+}
+.nav-link{
+  color: rgb(0, 0, 0);
+}
+
+.aboutme {
+    padding-top: 3cm;
+    color: rgb(250, 250, 250);
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(143, 19, 50);
+    padding-bottom: 2.4cm;
+}
+.name {
+  font-size: 3cm;
+}
+.body {
+    background-color: rgb(253, 201, 201) ;
+    font-family: "fairyfont";
+    font-size: 40px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.hint:link {
+    color: rgb(255, 255, 255);
+  }
+.hint:visited {
+    color: rgb(255, 251, 251);
+  }
+.hint:hover { 
+    text-decoration: none;
+}
+.hint:active {
+    text-decoration: none;
+  }
+
+.nav-link:link {
+    color: rgb(0, 0, 0);
+  }
+.nav-link:visited {
+    color: rgb(0, 0, 0);
+  }
+.nav-link:hover { 
+  border-bottom: 2px solid rgb(0, 0, 0) !important;
+  display: inline-block;
+  line-height: 0.85;
+}
+.nav-link:active {
+    text-decoration: none;
+  }

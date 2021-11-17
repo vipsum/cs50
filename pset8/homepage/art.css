@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "fairyfont";
+  src: url(Afterglow-Regular.ttf);
+}
+.body {
+  font-family: "fairyfont";
+    background-color: rgb(255, 205, 182);
+    font-size: 40px;
+    text-align: center;
+    border: 2cm rgb(105, 66, 105);
+    color: rgb(173, 10, 10);
+}
+.header {
+  text-align: center;
+  padding-top: 15px;
+  font-size: 25px;
+  padding-bottom: 0cm;
+}
+#invisible_underline {
+    border-bottom: 2px transparent;
+    display: inline-block;
+    line-height: 0.85;
+}
+#current {
+    border-bottom: 2px solid currentColor;
+    display: inline-block;
+    line-height: 0.85;
+}
+.bicha {
+  width: 6.5cm;
+  height: 11cm;
+  margin-bottom: 1cm;
+}
+.nav-link{
+    color: rgb(173, 10, 10);
+    font-family: "fairyfont";
+  }
+  .nav-link:link {
+    color: rgb(173, 10, 10);
+  }
+.nav-link:visited {
+    color: rgb(173, 10, 10);
+  }
+.nav-link:hover { 
+    border-bottom: 2px solid rgb(214, 44, 44) !important;
+    display: inline-block;
+    line-height: 0.85;
+    color: rgb(214, 44, 44);
+}
+.nav-link:active {
+    text-decoration: none;
+  }
+
+
