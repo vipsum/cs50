@@ -1,11 +1,47 @@
 @font-face {
   font-family: "fairyfont";
-  src: url(Afterglow-Regular.ttf);
+  src: url(BaroneysTextured.ttf);
 }
-.header {
-  padding-top: 15px;
-  font-size: 25px;
-  padding-bottom: 0cm;
+#puto {
+  background-image: url("AA005.jpg");
+  height: 100%;
+  background-size: cover;
+}
+html {
+  height: 100%;
+}
+.jumbotron {
+  background-color: transparent;
+}
+body {
+  height: 100%;
+  background-color: rgb(143, 19, 50);
+  font-family: "fairyfont";
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+#header {
+  padding-top: 2.3rem;
+  font-size: 2.5rem;
+  color: rgb(255, 255, 255);
+}
+#name {
+  font-size: calc(5rem + 15vmin);
+  line-height: normal;
+}
+#aboutme {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(250, 250, 250);
+  height: 100%;
+  font-size: 1.8rem;
+  background-color: rgb(143, 19, 50);
+}
+#texto {
+  width: 50%;
+  text-align: center;
+  margin: auto;
 }
 #invisible_underline {
   border-bottom: 2px transparent;
@@ -17,52 +53,30 @@
   display: inline-block;
   line-height: 0.85;
 }
-.nav-link{
-  color: rgb(0, 0, 0);
-}
-
-.aboutme {
-    padding-top: 3cm;
-    color: rgb(250, 250, 250);
-    text-align: center;
-    font-size: 30px;
-    background-color: rgb(143, 19, 50);
-    padding-bottom: 2.4cm;
-}
-.name {
-  font-size: 3cm;
-}
-.body {
-    background-color: rgb(253, 201, 201) ;
-    font-family: "fairyfont";
-    font-size: 40px;
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
 .hint:link {
-    color: rgb(255, 255, 255);
-  }
+  color: rgb(255, 255, 255);
+}
 .hint:visited {
-    color: rgb(255, 251, 251);
-  }
-.hint:hover { 
-    text-decoration: none;
+  color: rgb(255, 251, 251);
+}
+.hint:hover {
+  text-decoration: underline;
 }
 .hint:active {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 
 .nav-link:link {
-    color: rgb(0, 0, 0);
-  }
+  color: rgb(255, 255, 255);
+}
 .nav-link:visited {
-    color: rgb(0, 0, 0);
-  }
-.nav-link:hover { 
-  border-bottom: 2px solid rgb(0, 0, 0) !important;
+  color: rgb(255, 255, 255);
+}
+.nav-link:hover {
+  border-bottom: 2px solid rgb(255, 255, 255) !important;
   display: inline-block;
   line-height: 0.85;
 }
 .nav-link:active {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
